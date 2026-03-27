@@ -190,4 +190,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-For support, please open an issue on [GitHub](https://github.com/abdullahaltunkaynak/brick_base/issues)
+For support, please open an issue on [GitHub](https://github.com/abdullah-altunkaynak/brick_base/issues)
