@@ -1,6 +1,6 @@
 name: brick_base
 description: "Production-ready Flutter base package with API client, secure storage, extensions, and exception handling."
-publish_to: 'https://pub.dev'
+
 homepage: https://github.com/abdullah-altunkaynak/brick_base
 repository: https://github.com/abdullah-altunkaynak/brick_base
 issue_tracker: https://github.com/abdullah-altunkaynak/brick_base/issues
@@ -11,7 +11,6 @@ topics:
   - api-client
   - secure-storage
   - exception-handling
-  - base-package
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
 # followed by an optional build number separated by a +.
