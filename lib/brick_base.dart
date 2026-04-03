@@ -17,3 +17,6 @@ export 'core/services/secure_storage.dart';
 
 // Extensions
 export 'core/extensions/context_extensions.dart';
+
+// Models
+export 'core/models/result.dart';
