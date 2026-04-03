@@ -5,14 +5,14 @@ import 'secure_storage.dart';
 
 /// Dio-based API Client with token management and error handling
 class ApiClient {
-  static const String baseUrl = 'https://localhost/api';
+  final String baseUrl;
   static const Duration _connectionTimeout = Duration(seconds: 30);
   static const Duration _receiveTimeout = Duration(seconds: 30);
 
   late final Dio _dio;
   final SecureStorageService _secureStorage;
 
-  ApiClient(this._secureStorage) {
+  ApiClient(this._secureStorage, {required this.baseUrl}) {
     _dio = Dio(
       BaseOptions(
         baseUrl: baseUrl,

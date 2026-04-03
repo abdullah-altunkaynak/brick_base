@@ -6,7 +6,7 @@ void main() async {
 
   // Initialize Brick Base services
   final secureStorage = SecureStorageService();
-  final apiClient = ApiClient(secureStorage);
+  final apiClient = ApiClient(secureStorage, baseUrl: 'https://localhost/api');
 
   runApp(MyApp(secureStorage: secureStorage, apiClient: apiClient));
 }
