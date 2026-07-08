@@ -6,17 +6,21 @@ import 'secure_storage.dart';
 /// Dio-based API Client with token management and error handling
 class ApiClient {
   final String baseUrl;
-  static const Duration _connectionTimeout = Duration(seconds: 30);
+  final Duration connectionTimeout;
   static const Duration _receiveTimeout = Duration(seconds: 30);
 
   late final Dio _dio;
   final SecureStorageService _secureStorage;
 
-  ApiClient(this._secureStorage, {required this.baseUrl}) {
+  ApiClient(
+    this._secureStorage, {
+    required this.baseUrl,
+    this.connectionTimeout = const Duration(seconds: 45),
+  }) {
     _dio = Dio(
       BaseOptions(
         baseUrl: baseUrl,
-        connectTimeout: _connectionTimeout,
+        connectTimeout: connectionTimeout,
         receiveTimeout: _receiveTimeout,
         contentType: 'application/json',
         responseType: ResponseType.json,
